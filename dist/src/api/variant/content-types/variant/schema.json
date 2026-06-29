@@ -1,0 +1,45 @@
+{
+    "kind": "collectionType",
+    "collectionName": "variants",
+    "info": {
+        "singularName": "variant",
+        "pluralName": "variants",
+        "displayName": "Variant"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "size": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::size.size"
+        },
+        "color": {
+            "type": "relation",
+            "relation": "oneToOne",
+            "target": "api::color.color"
+        },
+        "media": {
+            "type": "media",
+            "multiple": true,
+            "allowedTypes": [
+                "files",
+                "images"
+            ]
+        },
+        "available": {
+            "type": "boolean"
+        },
+        "product": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::product.product",
+            "inversedBy": "variants"
+        }
+    }
+}

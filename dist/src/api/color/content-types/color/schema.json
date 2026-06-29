@@ -1,0 +1,23 @@
+{
+    "kind": "collectionType",
+    "collectionName": "colors",
+    "info": {
+        "singularName": "color",
+        "pluralName": "colors",
+        "displayName": "Color"
+    },
+    "options": {
+        "draftAndPublish": false
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "name": {
+            "type": "string"
+        },
+        "color_code": {
+            "type": "customField",
+            "customField": "plugin::color-picker.color",
+            "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+        }
+    }
+}

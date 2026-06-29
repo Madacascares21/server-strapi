@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_attributes_prices",
+  "info": {
+    "displayName": "Price"
+  },
+  "options": {},
+  "attributes": {
+    "original_price": {
+      "type": "decimal",
+      "default": 0,
+      "min": 0
+    },
+    "discounted_price": {
+      "type": "decimal",
+      "unique": false,
+      "default": 0,
+      "min": 0
+    },
+    "final_price": {
+      "type": "decimal",
+      "default": 0,
+      "min": 0
+    }
+  },
+  "config": {}
+}
