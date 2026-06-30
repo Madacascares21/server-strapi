@@ -40,6 +40,11 @@
             "relation": "manyToOne",
             "target": "api::product.product",
             "inversedBy": "variants"
+        },
+        "qty": {
+            "type": "integer",
+            "required": true,
+            "min": 0
         }
     }
 }
